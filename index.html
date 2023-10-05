@@ -2,22 +2,75 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NorthOn</title>
+	<base href="http/localhost:5500" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>NorthOn</title>
+	<link rel="stylesheet" href="./assets/styles/style.scss">
 </head>
 
 <body>
-    <nav class="navigation">
-        <div class="navigation_logo"></div>
-        <ul class="navigation_menu">
-            <li class="navigation_li"><a href="" class="navigation_link"></a></li>
-            <li class="navigation_li"><a href="" class="navigation_link"></a></li>
-            <li class="navigation_li"><a href="" class="navigation_link"></a></li>
-            <li class="navigation_li"><a href="" class="navigation_link"></a></li>
-        </ul>
-        <div class="navigation_button-basket"></div>
-    </nav>
+	<header class="header">
+		<nav class="navigation">
+			<a href="./" class="navigation__logo"><img src="./assets/img/logo.png" alt="" /></a>
+			<ul class="navigation__menu">
+				<li class="navigation__li">
+					<a href="./" class="navigation__link">Главная</a>
+				</li>
+				<li class="navigation__li">
+					<a href="./catalog.html" class="navigation__link">Каталог</a>
+				</li>
+				<li class="navigation__li">
+					<a href="./about.html" class="navigation__link">О нас</a>
+				</li>
+				<li class="navigation__li">
+					<a href="#footer" class="navigation__link">Контакты</a>
+				</li>
+			</ul>
+			<button class="navigation__button-basket">
+				<img src="./assets/img/basket.png" alt="" />
+			</button>
+		</nav>
+	</header>
+	<section class="slider">
+		<div class="slieder__item"></div>
+	</section>
+	<section class="new-products">
+		<h1 class="header new_products__header">Наши новинки</h1>
+		<div class="new-products__list">
+			<div class="card new-products__card">
+				<div class="card__image"><img src="" alt="" /></div>
+				<h4 class="card__heading"></h4>
+				<div class="card__interface">
+					<div class="card__price"></div>
+					<button class="card__button"></button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer" id="footer">
+		<div class="footer__block massagers">
+			<a href=""><img src="" alt="" /></a>
+			<a href=""><img src="" alt="" /></a><a href=""><img src="" alt="" /></a><a href=""><img src="" alt="" /></a>
+		</div>
+		<nav class="footer__block menu">
+			<ul class="navigation__menu">
+				<li class="navigation__li">
+					<a href="./" class="navigation__link">Главная</a>
+				</li>
+				<li class="navigation__li">
+					<a href="./catalog.html" class="navigation__link">Каталог</a>
+				</li>
+				<li class="navigation__li">
+					<a href="./about.html" class="navigation__link">О нас</a>
+				</li>
+				<li class="navigation__li">
+					<a href="#footer" class="navigation__link">Контакты</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="footer__block contacts"></div>
+	</footer>
 </body>
 
 </html>
